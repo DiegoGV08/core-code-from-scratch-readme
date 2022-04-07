@@ -1,7 +1,7 @@
 # core-code-from-scratch-readme
 
 # Week 1
-## Tuesday 04/05/2022
+## Tuesday 05/04/2022
 ### 1. Interpreted And Compiled Programming Languages
 
 #### Compiled programming languajes: 
@@ -26,3 +26,55 @@ Java is a combination of compiled and interpreted languaje. Java source code is 
 Low level language, is a language that is very close to hardware and can be directly executable on the computing hardware without any compiler or interpreter.
 #### High level languages:
 High level language, is a languaje that is very close to humans language, is easier to read, write and maintain.
+
+## Wensday 06/04/2022
+### 1. Your date of birth in the matrix?
+#### My birthday:  04 / 08 / 1993 - (dd/mm/yyyy)
+#### Day: 100
+#### Month: 1000
+#### Year: 11111001001
+### My birthday (binary):  100 / 1000 / 1111100100 - (dd/mm/yyyy)
+### 2. MIPS
+### 2.1 Create a program that adds any two given numbers provided by the user
+    .data
+            number1: .asciiz "\nIngrese el primer numero: "
+            number2: .asciiz "\nIngrese el segundo numero: "
+            add_numbers: .asciiz "\nEl resultado de la suma es: "
+      .text
+            main:
+                  li $v0, 4
+                  la $a0, number1
+                  syscall
+
+                  li $v0, 5
+                  syscall
+
+                  move $t0, $v0
+
+                  li $v0, 4
+                  la $a0, number2
+                  syscall
+
+                  li $v0, 5
+                  syscall
+
+                  move $t1, $v0
+
+                  add $t2, $t0, $t1
+
+                  li $v0, 4
+                  la $a0, add_numbers
+                  syscall
+
+                  li $v0, 1
+                  move $a0, $t2
+                  syscall
+### 2.2 Create a program that displays your name
+    .data
+            name: .asciiz "\nMi nombre es: Diego Galdamez"
+
+      .text
+            main:
+                  li $v0, 4
+                  la $a0, name
+                  syscall
