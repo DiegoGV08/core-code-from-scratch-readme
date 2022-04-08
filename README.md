@@ -21,21 +21,21 @@ Java is a combination of compiled and interpreted languaje. Java source code is 
 6. PRINT Amount of BTC is:
 7. PRINT B
 8. END
-### 4. High and Low level languages
+### 4. High and Low level languages.
 #### Low level languages:
 Low level language, is a language that is very close to hardware and can be directly executable on the computing hardware without any compiler or interpreter.
 #### High level languages:
 High level language, is a languaje that is very close to humans language, is easier to read, write and maintain.
 
 ## Wensday 06/04/2022
-### 1. Your date of birth in the matrix?
+### 1. Your date of birth in the matrix?.
 #### My birthday:  04 / 08 / 1993 - (dd/mm/yyyy)
 #### Day: 100
 #### Month: 1000
 #### Year: 11111001001
 ### My birthday (binary):  100 / 1000 / 1111100100 - (dd/mm/yyyy)
-### 2. MIPS
-### 2.1 Create a program that adds any two given numbers provided by the user
+### 2. MIPS.
+### 2.1 Create a program that adds any two given numbers provided by the user.
     .data
             number1: .asciiz "\nIngrese el primer numero: "
             number2: .asciiz "\nIngrese el segundo numero: "
@@ -69,7 +69,7 @@ High level language, is a languaje that is very close to humans language, is eas
                   li $v0, 1
                   move $a0, $t2
                   syscall
-### 2.2 Create a program that displays your name
+### 2.2 Create a program that displays your name.
     .data
             name: .asciiz "\nMi nombre es: Diego Galdamez"
 
@@ -78,3 +78,53 @@ High level language, is a languaje that is very close to humans language, is eas
                   li $v0, 4
                   la $a0, name
                   syscall
+
+## Thursday 07/04/2022
+### 1. Print special numbers.
+### 1.1 For.
+    for (var n = 0; n <= 100; n++) {
+        if (n % 2 == 0) {
+            console.log(i);
+        }
+    }
+### 1.2 While.
+    var n = 0;
+
+    while (n <= 100) {
+        if (n % 2 == 0) {
+            console.log(n);
+        }
+        n=n+1;
+    }
+### 1.3 do While.
+    var n = 0;
+
+    do {
+        if (n % 2 == 0) {
+            console.log(n);
+        }
+        n=n+1;
+    } while (n <= 100);
+### 2. Bad Code.
+    var n = 110;
+
+    if (n == 100) {
+        console.log('This is a special number!');
+    }
+    else if (n < 1000 && n % 10 == 0 && n != 100) {
+        console.log('This number is almost special');
+    } else {
+        console.log('Just a regular number');
+    }
+    
+The error was in the "else if" condition, you need to add the condition of number is less than 1000, multiple of 10 and different from 100 in the same condition with the logical operator that is called "AND".
+### 3. Bad Code 2.
+    var cond = false;
+
+    if ((cond == true)) {
+      console.log('The cond variable is true');
+    } else {
+      console.log('The cond variable is false');
+    }
+    
+The error was at the beginig of the control flow "if", you have to reemplace the = for == to make a comparisson in the control flow, not a new asignation of the variable.
