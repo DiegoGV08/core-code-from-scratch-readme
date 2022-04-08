@@ -106,7 +106,7 @@ High level language, is a languaje that is very close to humans language, is eas
         n=n+1;
     } while (n <= 100);
 ### 2. Bad Code.
-    var n = 110;
+    var n = 100;
 
     if (n == 100) {
         console.log('This is a special number!');
