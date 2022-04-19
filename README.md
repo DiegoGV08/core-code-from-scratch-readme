@@ -84,7 +84,7 @@ High level language, is a languaje that is very close to humans language, is eas
 ### 1.1 For.
     for (var n = 0; n <= 100; n++) {
         if (n % 2 == 0) {
-            console.log(i);
+            console.log(n);
         }
     }
 ### 1.2 While.
