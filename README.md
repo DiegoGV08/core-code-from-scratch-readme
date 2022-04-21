@@ -129,33 +129,52 @@ The error was in the "else if" condition, you need to add the condition of numbe
     
 The error was at the beginig of the control flow "if", you have to reemplace the = for == to make a comparisson in the control flow, not a new asignation of the variable.
 ## Tuesday 19/04/2022
-1. Multiply exercise
-<!-- function multiply(a, b){
-  return a * b
-}
- -->
-2. ASCII Total exercise
-<!-- function uniTotal (string) {
-  sum=0;
-  for (i=0; i<string.length;i++){
-    sum = string[i].charCodeAt()+sum;
-  }
-return sum;
-  // total up dem unicodes!
-} -->
-3. Char From ASCII Value exercise
-<!--  function getChar(c){
-return String.fromCharCode(c);
-  // ...
-} -->
-4. Binary Addition exercise
-<!-- function addBinary(a,b) {
-sum=a+b;
-  binary = Number(sum).toString(2);
-  return binary;
-} -->
+### 1. Multiply exercise
+    function multiply(a, b){
+      return a * b
+    }
+
+### 2. ASCII Total exercise
+    function uniTotal (string) {
+      sum=0;
+      for (i=0; i<string.length;i++){
+        sum = string[i].charCodeAt()+sum;
+      }
+    return sum;
+      // total up dem unicodes!
+    }
+### 3. Char From ASCII Value exercise
+     function getChar(c){
+    return String.fromCharCode(c);
+      // ...
+    }
+### 4. Binary Addition exercise
+    function addBinary(a,b) {
+    sum=a+b;
+      binary = Number(sum).toString(2);
+      return binary;
+    }
 ## Wensday 20/04/2022
-1. Holiday VIII - Duty Free exercise
-2. Twice As Old exercise
-3. Valid Spacing exercise
-4. Fake Binary exercise
+### 1. Holiday VIII - Duty Free exercise
+    function dutyFree(normPrice, discount, hol){
+    numbottle= normPrice*(discount/100);
+      return Math.floor(hol/numbottle);
+    }
+### 2. Twice As Old exercise
+    function twiceAsOld(dadYearsOld, sonYearsOld) {
+      let double_age_son = sonYearsOld*2;
+      return Math.abs(double_age_son-dadYearsOld);
+    }
+### 3. Valid Spacing exercise
+    function validSpacing(s) {
+      for(let i=0;i<=s.length;i++){
+        if (s[0]==' ' || s[s.length-1]==' '){
+          var validation = false;}
+        else if (s[i]==' ' && s[i+1]==' ' && i>=0 && i<s.length-1 || s[i]==' ' && s[i-1]==' ' && i>0 && i<=s.length-1){
+          var validation = false;}
+      }
+    if (typeof(validation) == "undefined"){
+      return true;}
+      else {return false};
+    }
+### 4. Fake Binary exercise
