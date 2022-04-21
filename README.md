@@ -154,6 +154,17 @@ The error was at the beginig of the control flow "if", you have to reemplace the
       binary = Number(sum).toString(2);
       return binary;
     }
+### 5. Student's Final Grade exercise
+    function finalGrade (exam, projects) {
+
+      if (exam>90 || projects>10){
+        return finalgrade=100;}
+      else if (exam>75 && projects>=5){
+        return finalgrade=90;}
+        else if (exam>50 && projects>=2){
+        return finalgrade=75;}
+      else return finalgrade=0;
+    }
 ## Wensday 20/04/2022
 ### 1. Holiday VIII - Duty Free exercise
     function dutyFree(normPrice, discount, hol){
