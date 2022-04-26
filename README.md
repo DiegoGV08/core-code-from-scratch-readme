@@ -189,3 +189,30 @@ The error was at the beginig of the control flow "if", you have to reemplace the
       else {return false};
     }
 ### 4. Fake Binary exercise
+## Monday 25/04/2022
+### 1.
+function likes(names) {
+      if(names.length === 0){
+      return 'no one likes this'
+    }
+    if(names.length===1){
+      return names[0]+' likes this';
+    }if(names.length===2){
+      return names[0]+' and '+names[1]+' like this';
+    }if(names.length===3){
+      return names[0]+', '+names[1]+' and '+names[2]+' like this';
+    }return names[0]+', '+names[1]+' and '+(names.length-2)+' others like this';
+}
+### 2.
+var countBits = function(n) {
+  if (n>=0)
+{    let array = n.toString(2).split('');
+    let temp=0;
+  for(let i=0;i<array.length;i++){
+    if(array[i]==="1"){
+      temp=temp+1;
+    }
+  }
+return temp}
+  // Program Me
+};
