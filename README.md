@@ -27,7 +27,7 @@ Low level language, is a language that is very close to hardware and can be dire
 #### High level languages:
 High level language, is a languaje that is very close to humans language, is easier to read, write and maintain.
 
-## Wensday 06/04/2022
+## Wednesday 06/04/2022
 ### 1. Your date of birth in the matrix?.
 #### My birthday:  04 / 08 / 1993 - (dd/mm/yyyy)
 #### Day: 100
@@ -165,7 +165,7 @@ The error was at the beginig of the control flow "if", you have to reemplace the
         return finalgrade=75;}
       else return finalgrade=0;
     }
-## Wensday 20/04/2022
+## Wednesday 20/04/2022
 ### 1. Holiday VIII - Duty Free exercise
     function dutyFree(normPrice, discount, hol){
     numbottle= normPrice*(discount/100);
