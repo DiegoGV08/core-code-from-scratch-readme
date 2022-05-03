@@ -201,8 +201,18 @@ The error was at the beginig of the control flow "if", you have to reemplace the
     }
       return result;
     }
+## Thursday 21/04/2022
+### 1. Remove All Exclamation Marks From The End Of Sentence exercise
+            function remove (string) {  
+      return string.replace(/!*$/,'');
+    }
+### 2. Vowel Remover
+    function shortcut (string) {
+    return string.replace(/[aeiou]/gi, '');
+    }
+# Week 3
 ## Monday 25/04/2022
-### 1.
+### 1. Who Likes It?
     function likes(names) {
           if(names.length === 0){
           return 'no one likes this'
@@ -215,7 +225,7 @@ The error was at the beginig of the control flow "if", you have to reemplace the
           return names[0]+', '+names[1]+' and '+names[2]+' like this';
         }return names[0]+', '+names[1]+' and '+(names.length-2)+' others like this';
     }
-### 2.
+### 2. Bit Counting
     var countBits = function(n) {
       if (n>=0)
     {    let array = n.toString(2).split('');
@@ -228,3 +238,5 @@ The error was at the beginig of the control flow "if", you have to reemplace the
     return temp}
       // Program Me
     };
+### 3. Your Order, Please
+## Tuesday 26/04/2022
