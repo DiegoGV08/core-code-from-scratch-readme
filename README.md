@@ -128,6 +128,7 @@ The error was in the "else if" condition, you need to add the condition of numbe
     }
     
 The error was at the beginig of the control flow "if", you have to reemplace the = for == to make a comparisson in the control flow, not a new asignation of the variable.
+# Week 2
 ## Tuesday 19/04/2022
 ### 1. Multiply exercise
     function multiply(a, b){
